@@ -30,7 +30,7 @@ with col2:
 
 selected_city = st.selectbox('Select host city',sorted(cities))
 
-target = st.number_input('Target')
+target = st.number_input('Target', min_value=0, step=1)
 
 col3,col4,col5 = st.columns(3)
 
